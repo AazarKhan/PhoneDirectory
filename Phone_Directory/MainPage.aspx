@@ -15,7 +15,7 @@
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/jquery.blockUI.js"></script>
 
-<%--    <script src="http://malsup.github.io/jquery.blockUI.js"></script>--%>
+    <%--    <script src="http://malsup.github.io/jquery.blockUI.js"></script>--%>
 
     <title>Main Page | Phone Directory</title>
 
@@ -72,7 +72,7 @@
                         <button class="btn btn-default" data-toggle="tooltip" data-placement="top" type="button" title="Add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
                     </span>
 
-                    <asp:TextBox ID="SearchBox" runat="server"  CssClass="form-control" placeholder="Search by Number, Name or City.."></asp:TextBox>
+                    <asp:TextBox ID="SearchBox" runat="server" CssClass="form-control" placeholder="Search by Number, Name or City.."></asp:TextBox>
 
                     <span class="input-group-btn">
                         <button class="btn btn-default myButton" runat="server" onserverclick="SearchButton_Click" type="button" data-toggle="tooltip" data-placement="top" title="Search Keyword">
@@ -87,7 +87,8 @@
                     </span>
                 </div>
 
-                <b><asp:Label ID="LabelGrid" runat="server" Text=""></asp:Label></b>
+                <b>
+                    <asp:Label ID="LabelGrid" runat="server" Text=""></asp:Label></b>
             </div>
 
 
@@ -118,7 +119,7 @@
                 });
             });
         });
-        
+
         function removeText() {
             $('#TextBoxNumber').val("");
             $('#TextBoxName').val("");
