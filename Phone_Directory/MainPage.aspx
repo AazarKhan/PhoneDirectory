@@ -61,34 +61,41 @@
 
         <div class="container maindiv">
 
-            <div style="overflow: hidden; text-align: center;">
-                <h1>Phone Directory</h1>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0" style="overflow: hidden; text-align: center;">
+                    <h1>Phone Directory</h1>
+                </div>
             </div>
 
-            <div style="position: absolute; margin-left: 480px; margin-top: 20px; width: 400px;">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
-                <div class="input-group">
-                    <span class="input-group-btn" data-toggle="modal" data-target="#basicModal">
-                        <button class="btn btn-default" data-toggle="tooltip" data-placement="top" type="button" title="Add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
-                    </span>
+                    <div class="input-group">
+                        <span class="input-group-btn" data-toggle="modal" data-target="#basicModal">
+                            <button class="btn btn-default" data-toggle="tooltip" data-placement="top" type="button" title="Add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        </span>
 
-                    <asp:TextBox ID="SearchBox" runat="server" CssClass="form-control" placeholder="Search by Number, Name or City.."></asp:TextBox>
+                        <asp:TextBox ID="SearchBox" runat="server" CssClass="form-control" placeholder="Search by Number, Name or City.."></asp:TextBox>
 
-                    <span class="input-group-btn">
-                        <button class="btn btn-default myButton" runat="server" onserverclick="SearchButton_Click" type="button" data-toggle="tooltip" data-placement="top" title="Search Keyword">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        </button>
-                    </span>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default myButton" runat="server" onserverclick="SearchButton_Click" type="button" data-toggle="tooltip" data-placement="top" title="Search Keyword">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
 
-                    <span class="input-group-btn">
-                        <button class="btn btn-default myButton" runat="server" onserverclick="ShowData_Click" type="button" data-toggle="tooltip" data-placement="top" title="List All">
-                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-                        </button>
-                    </span>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default myButton" runat="server" onserverclick="ShowData_Click" type="button" data-toggle="tooltip" data-placement="top" title="List All">
+                                <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
                 </div>
+            </div>
 
-                <b>
-                    <asp:Label ID="LabelGrid" runat="server" Text=""></asp:Label></b>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-2">
+                    <b><asp:Label ID="LabelGrid" runat="server" Text=""></asp:Label></b>
+                </div>
             </div>
 
 
